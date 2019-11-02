@@ -10,12 +10,12 @@ while printer.length <=4
 end
 
 for i in printer
-    if i.class == String
-        printerf.push(i)
-    elsif i.class == Integer
-        trash.push(i)
+        if i.class == String
+            printerf.push(i)
+        elsif i.class == Integer
+            trash.push(i)
+        end
     end
-end
 
 puts "\n\n***************************"
 printerf.each { |x| puts ("*   " << (x.concat (" " * -(x.length - 20)) << "      *")) }
@@ -27,7 +27,13 @@ puts "***************************\n\n"
 
 
 
-
+# for i in printer
+    #     if i.class == String
+    #         printerf.push(i)
+    #     elsif i.class == Integer
+    #         trash.push(i)
+    #     end
+    # end
 
 # puts "
 # ***************************
